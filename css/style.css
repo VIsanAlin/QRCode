@@ -1,41 +1,90 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --lightgray: hsl(212, 45%, 89%);
+  --gray-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+}
+
 * {
   padding: 0;
   margin: 0;
 }
 body {
-  background-color: lightblue;
+  background-color: var(--lightgray);
 }
 
-h2,
-h4 {
-  padding: 10px;
+@media screen and (max-width: 375px) {
+  /* Mobile */
+  h2,
+  h4 {
+    font-family: "Outfit", sans-serif;
+    padding: 10px;
+  }
+
+  h4 {
+    color: var(--gray-blue);
+  }
+
+  div img {
+    height: 275px;
+    width: 275px;
+  }
+  .content {
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 300px;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+  .attribution {
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: center;
+  }
+  .attribution a {
+    color: var(--dark-blue);
+    text-decoration: none;
+  }
 }
 
-h4 {
-  color: rgba(71, 71, 71, 0.6);
-}
+@media screen and (min-width: 1440px) {
+  /* Desktop */
+  h2,
+  h4 {
+    font-family: "Outfit", sans-serif;
+    padding: 10px;
+  }
 
-div img {
-  height: 300px;
-  width: 300px;
-}
-.content {
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  width: 300px;
-  padding: 15px;
-  border-radius: 20px;
-  background-color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-}
-.attribution {
-  margin-top: 10px;
-  font-size: 15px;
-  text-align: center;
-}
-.attribution a {
-  color: rgb(126, 87, 194);
-  text-decoration: none;
+  h4 {
+    color: var(--gray-blue);
+  }
+
+  div img {
+    height: 300px;
+    width: 300px;
+  }
+  .content {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 300px;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+  .attribution {
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: center;
+  }
+  .attribution a {
+    color: var(--dark-blue);
+    text-decoration: none;
+  }
 }
