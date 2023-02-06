@@ -11,6 +11,10 @@ h4 {
   padding: 10px;
 }
 
+h4 {
+  color: rgba(71, 71, 71, 0.6);
+}
+
 div img {
   height: 300px;
   width: 300px;
